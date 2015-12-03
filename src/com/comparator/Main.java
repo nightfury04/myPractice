@@ -23,7 +23,17 @@ public class Main {
 		lstEmployees.add(b);
 		
 		//unsorted
-		System.out.println("Unsorted list:");
+		try {
+			System.out.println("Unsorted list:");
+			throw new Exception();
+		} catch (java.io.IOException exc) {
+            System.err.println("In catch IOException: "+exc.getClass());
+            throw new RuntimeException();
+        } catch (Exception exc) {
+            System.err.println("In catch Exception: "+exc.getClass());
+        } finally {
+            System.err.println("In finally");
+        }
 		
 		for(Employee emp : lstEmployees)
 		{
