@@ -33,6 +33,26 @@ class Dept
 	private String deptname;
 	private int noOfStudents;
 	
+	
+	public String getDeptname() {
+		return deptname;
+	}
+
+	public void setDeptname(String deptname) {
+		this.deptname = deptname;
+	}
+
+	
+	public int getNoOfStudents() {
+		return noOfStudents;
+	}
+
+	public void setNoOfStudents(int noOfStudents) {
+		this.noOfStudents = noOfStudents;
+	}
+
+	
+	
 	public Dept(String deptname,int noOfStudents)
 	{
 		this.deptname = deptname;
@@ -42,7 +62,14 @@ class Dept
 	@Override
 	public boolean equals(Object obj) {
 		// TODO Auto-generated method stub
-		return this.deptname.equals(((Dept)obj).deptname);
+		if(obj instanceof Dept)
+		{
+			return this.deptname.equals(((Dept)obj).deptname);
+		}
+		else
+		{
+			return false;
+		}
 	}
 
 	@Override
