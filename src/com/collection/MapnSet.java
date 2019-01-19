@@ -21,6 +21,9 @@ public class MapnSet {
 		set.add(d1);
 		set.add(d2);
 		System.out.println("Location 2 : "+set.size());
+		
+		System.out.println(d1.hashCode());
+		System.out.println(d2.hashCode());
 	}
 	
 	
