@@ -1,18 +1,14 @@
 package com.exceptions;
 
-import java.io.FileNotFoundException;
-import java.io.IOException;
-
 public class TestingExceptions {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws MyException {
 		
 	try {
-		System.out.println("Running application");
+		System.out.println("Rahul");
 		throw new RuntimeException();
 	} catch (Exception e) {
-		// TODO Auto-generated catch block
-		System.out.println("Rahul");
+		throw new MyException("I have thrown a custom exception.");
 	}
 	
 	}

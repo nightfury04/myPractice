@@ -1,4 +1,4 @@
-package com.inheritance;
+package com.inheritance.constructors;
 
 public class Inheritance {
 	
@@ -37,7 +37,6 @@ class B extends A
 	}
 	B(String s)
 	{
-		this();
 		System.out.println("B's overloaded constructor.");
 	}
 	

@@ -3,12 +3,11 @@ package com.exceptions;
 public class MyException extends Exception {
 
 	private static final long serialVersionUID = 1L;
-
-	@Override
-	public String getMessage() {
-		return "This is my Exception";
+	
+	public MyException(String message) 
+	{
+		super(message);
 	}
-	
-	
+
 
 }

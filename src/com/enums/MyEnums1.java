@@ -6,6 +6,11 @@ public class MyEnums1 {
 	{
 		Days d1 = Days.MON;
 		System.out.println("Day of week: "+d1.getDayOfWeek());
+		
+		for(Days d : Days.values()) 
+		{
+			System.out.println(d.toString());
+		}
 	}
 	
 	
